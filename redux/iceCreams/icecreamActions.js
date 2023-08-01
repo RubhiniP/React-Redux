@@ -1,7 +1,8 @@
 import { BUY_ICECREAM } from "./icecreamTypes"
 
-export const buyIcecream = () => {
+export const buyIcecream = (number = 1) => {
     return{
-        type: BUY_ICECREAM
+        type: BUY_ICECREAM,
+        payload: number
     }
 }
